@@ -1,0 +1,27 @@
+body {
+	background: black;
+	background-size: cover;
+	display: flex;
+}
+h1 {
+	color: white;
+	position: absolute;
+	font-family: inherit;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: linear-gradient(90deg, black, gray, black);
+	animation: animate 5s linear infinite;
+	background-size: 90%;
+	background-repeat: no-repeat;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 70px;
+}
+@keyframes animate{
+	from{
+		background-position: -1000%;
+	}
+	to{
+		background-position: 1000%
+	}
+}
